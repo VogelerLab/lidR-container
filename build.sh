@@ -42,4 +42,5 @@ git_commit="$(git rev-parse HEAD . | head -1)"
 docker build \
     --label "git_commit=$git_commit" \
     --tag "vogelerlab/lidr-container:latest" \
+    . \
 ;
