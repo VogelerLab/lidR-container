@@ -11,8 +11,7 @@ LABEL Author="Daniel Rode"
 # Install Alpine Linux packages for building R libraries
 RUN ash <<'EOF'
     set -e  # Exit on error
-    apk update
-    apk add \
+    apk add --no-cache \
         abseil-cpp-dev \
         boost-dev \
         fontconfig-dev \
